@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marvel Енциклопедія</title>
+    <link rel="stylesheet" href="/test4/style.css" />
+  </head>
+  <body>
+    <header>
+      <img src="/test4/img/marvel.png" alt="" />
+      <h1>Енциклопедія</h1>
+      <div class="controls">
+        <input type="text" id="search" placeholder="Пошук персонажа..." />
+        <select id="itemsPerPage">
+          <option value="20">20</option>
+          <option value="30" selected>30</option>
+          <option value="40">40</option>
+        </select>
+      </div>
+    </header>
+
+    <main>
+      <div id="charactersContainer" class="cards-container"></div>
+      <div id="pagination" class="pagination"></div>
+    </main>
+
+    <script src="test.js"></script>
+  </body>
+</html>

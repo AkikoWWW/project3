@@ -1,0 +1,140 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #202020;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.controls {
+  margin-top: 10px;
+}
+
+input,
+select {
+  padding: 5px 10px;
+  margin: 5px;
+  font-size: 16px;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+  gap: 20px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  width: 200px;
+  padding: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card h3 {
+  margin: 10px 0 5px 0;
+  font-size: 18px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  gap: 5px;
+}
+
+.pagination button {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.marImg {
+  display: flex;
+  justify-content: baseline;
+}
+
+#backButton {
+  display: inline-block;
+  margin: 20px 0;
+  padding: 10px 20px;
+  background-color: #000000;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+#backButton:hover {
+  background-color: #ff0000;
+  transform: scale(1.05);
+}
+
+#backButton:active {
+  transform: scale(0.95);
+}
+
+#characterDetail {
+  position: relative;
+  padding: 50px 20px 30px;
+  max-width: 600px;
+  margin: 30px auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+#characterDetail img {
+  max-width: 250px;
+  border-radius: 10px;
+  margin: 20px 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#characterDetail h2 {
+  margin-bottom: 15px;
+  font-size: 28px;
+  color: #202020;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.stat {
+  background: #f7f7f7;
+  border-radius: 8px;
+  padding: 12px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  text-align: left;
+}
+
+.stat strong {
+  color: #e62429;
+}
